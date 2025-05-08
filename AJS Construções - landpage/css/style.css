@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial Narrow Bold, sans-serif;
+    line-height: 1.6;
+ 
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;  
+    position: sticky;
+    z-index: 1000;
+    background-color: rgb(245, 127, 31); 
+}
+
+nav .Logo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    flex: 1;
+}
+
+nav ul{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+}
+
+section {
+    background: white;
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto; /* Centraliza horizontalmente */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo interno */
+    text-align: center;  /* Centraliza os textos */
+}
+
+
+section h1{
+    font-size: 50px;
+}
+
+section h2{
+font-size: 20px;
+}
+
+section p, section ul, section li{
+font-size: 18px;
+list-style: none;
+}
+
+section ul{
+    padding-top: 15px;
+    text-align: center;
+}
+
+.whatsapp-contato {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* espaço entre ícone e texto */
+    margin-top: 10px;
+}
+
+.whatsapp {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+a.whatsapp {
+    text-decoration: none;
+    color: black; /* ou a cor que você quiser */
+}
+
+footer .rodape{
+    background-color: rgb(245, 127, 31);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .rodape-grid{
+    background-color: rgb(245, 127, 31);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .rodape-grid div{
+    flex: 1;
+    min-width: 200px;
+}
+
+footer p, footer a{
+    margin: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav .Logo {
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        position: static;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        margin-top: 10px;
+    }
+
+    nav ul li a {
+        font-size: 18px;
+        padding: 8px;
+    }
+
+    section {
+        padding: 20px 10px;
+    }
+
+    section h1 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    section h2 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    section p {
+        font-size: 15px;
+        text-align: center;
+    }
+}
+
